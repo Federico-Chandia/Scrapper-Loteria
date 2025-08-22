@@ -2,6 +2,7 @@ services:
   - type: web
     name: quini6-api
     env: node
+    runtime: node
     buildCommand: npm install && npm run build
     startCommand: npm start
     envVars:
@@ -9,3 +10,7 @@ services:
         value: production
       - key: PORT
         value: 10000
+    disk:
+      name: quini6-disk
+      mountPath: /opt/render/project/src
+      sizeGB: 1
