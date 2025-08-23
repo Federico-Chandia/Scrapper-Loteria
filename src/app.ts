@@ -1,9 +1,9 @@
-const express = require('express');
-const morgan = require('morgan');
-const helmet = require('helmet');
-const cors = require('cors');
-const middlewares = require('./middlewares');
-const indexRouter = require('./routes/index').default;
+import express from 'express';
+import morgan from 'morgan';
+import helmet from 'helmet';
+import cors from 'cors';
+import * as middlewares from './middlewares';
+import indexRouter from './routes/index';
 
 require('dotenv').config();
 
@@ -19,4 +19,4 @@ app.use('/', indexRouter);
 app.use(middlewares.notFound);
 app.use(middlewares.errorHandler);
 
-module.exports = { default: app };
+export default app;
