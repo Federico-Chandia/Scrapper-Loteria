@@ -2,7 +2,7 @@
   "name": "quini6-resultados-api-crawler",
   "version": "1.0.2",
   "description": "Api en NodeJS/Express/Cheerio para obtener los resultados del Quini 6",
-  "main": "src/index.ts",
+  "main": "dist/index.js",
   "scripts": {
     "start": "node dist/index.js",
     "build": "tsc",

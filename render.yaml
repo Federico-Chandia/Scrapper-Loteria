@@ -12,5 +12,5 @@ services:
         value: 10000
     disk:
       name: quini6-disk
-      mountPath: /opt/render/project/src
+      mountPath: /opt/render/project/data
       sizeGB: 1
