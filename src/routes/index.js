@@ -34,7 +34,7 @@ app.get('/scraping', async (req, res) => {
       data: sorteos
     });
   } catch (error) {
-    res.status(500).json({ error: 'Error en el scraping' });
+    res.status(500).json({ error: 'Error en el scraping', details: error.message });
   }
 });
 
